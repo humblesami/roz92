@@ -1,0 +1,21 @@
+# prevent directory listings
+Options -Indexes
+# follow symbolic links
+Options FollowSymlinks
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} ^/manage/$
+RewriteRule ^(manage)/$ /$1 [R=301,L]
+RewriteCond %{REQUEST_URI} ^/manage
+RewriteRule ^manage(/.+)?$ /backend/web/$1 [L,PT]
+
+RewriteCond %{REQUEST_URI} ^/paper/$
+RewriteRule ^(paper)/$ /$1 [R=301,L]
+RewriteCond %{REQUEST_URI} ^/paper
+RewriteRule ^paper(/.+)?$ /efrontend/web/$1 [L,PT]
+
+RewriteCond %{REQUEST_URI} !ads.txt
+RewriteCond %{REQUEST_URI} !sitemap.xml
+RewriteCond %{REQUEST_URI} !robots.txt 
+RewriteCond %{REQUEST_URI} ^.*$
+RewriteRule ^(.*)$ /frontend/web/$1
