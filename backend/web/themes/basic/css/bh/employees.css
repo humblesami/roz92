@@ -1,0 +1,746 @@
+/**********************************************************
+*	$Employee Tab Stlye Sheet
+*	Where awesome style lives
+**********************************************************/
+
+footer {
+	position: relative;
+	z-index: -1;
+}
+
+.ts-list tr:last-child td { border-color:#b1b1b1; }
+
+.contentContainer .ts-list td { font-size: 14px; }
+
+.employee-list td a > img,
+#dir .entry img,
+#dir .entry .empPhoto,
+#dir .entry .employee-photo {
+	width: 80px;
+	height: 80px;
+	padding: 4px;
+	border: solid #d0d0d0 1px;
+	box-shadow: 0px 0px 1px rgba(0,0,0,.28);
+}
+
+.employeeSection #contentTop .left h2{
+	font-size:28px;
+	height: 36px; /*added to avoid tab menu loading short - because Bariol takes too long to load in */
+}
+.employeeSection #contentTop .left h3{ font-size:17px; }
+
+/* fixed employee nav style overrides */
+#employeeNavFixed {
+	position: fixed;
+	top: 0px;
+	z-index:2;
+	width: 100%;
+	min-width: 993px;
+	opacity: .9; 
+	background: #f6f6f6; /* Old browsers */
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	background: -moz-linear-gradient(top,  #f6f6f6 0%, #ededed 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#ededed));
+	background: -webkit-linear-gradient(top,  #f6f6f6 0%,#ededed 100%);
+	background: -o-linear-gradient(top,  #f6f6f6 0%,#ededed 100%);
+	background: -ms-linear-gradient(top,  #f6f6f6 0%,#ededed 100%);
+	background: linear-gradient(to bottom,  #f6f6f6 0%,#ededed 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ededed',GradientType=0 );
+}
+
+#employeeNavFixed .bhrCollapseTab a { 
+	font-size: 14px; 
+	color: #777;
+}
+
+#employeeNavFixed .bhrCollapseTab a.active {
+	color: #222;
+}
+
+#employeeNavFixed .bhrCollapseTab > li > a {
+	padding-top: 7px;
+	padding-bottom: 5px;
+}
+#employeeNavFixed .bhrCollapseTab > li > a.moreLink { border-bottom:none; }
+#employeeNavFixed .bhrCollapseTab .moreMenu { top: 30px; }
+#employeeNavFixed .bhrCollapseTab > li > .active:before { bottom: 0px; height: 3px; top: auto; }
+
+#employeeNavFixed li > a:not(.active):hover, 
+#employeeNavFixed .moreItems:hover > a {
+	background: #E8E8E8;
+	background: -moz-linear-gradient(top,  #E8E8E8 0%, #DADADA 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E8E8E8), color-stop(100%,#DADADA));
+	background: -webkit-linear-gradient(top,  #E8E8E8 0%,#DADADA 100%);
+	background: -o-linear-gradient(top,  #E8E8E8 0%,#DADADA 100%);
+	background: -ms-linear-gradient(top,  #E8E8E8 0%,#DADADA 100%);
+	background: linear-gradient(to bottom,  #E8E8E8 0%,#DADADA 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E8E8E8', endColorstr='#DADADA',GradientType=0 );
+	color: #555;
+	opacity: .9;
+}
+#employeeNavFixed .bhrCollapseTab .moreItems > a:after { border-color: #777 transparent transparent; }
+
+#employeeNav .employeeName {
+	display: none;
+	font-size: 20px;
+	font-weight: 700;
+	position: absolute;
+	left: 0px;
+	top: 7px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 210px;
+	/*margin-left: 22px;*/
+	height: 25px;
+}
+#employeeNav .employeeName > .iconPersonLrg {
+	margin-right: 5px;
+	display: inline-block;
+}
+/* //fixed employee nav style overrides */
+
+/**
+* Employee area icons
+**/
+.employeeIcons {
+	display:inline-block;
+	background-color:#fff;
+	background-image:url('../images/sprite-employees.png') !important;
+	background-repeat: no-repeat;
+	height:20px;
+	width:20px;
+	vertical-align: middle;
+	margin: 0 7px 0 0;
+}
+
+.social .employeeIcons {
+	text-indent:-3000px;
+	overflow:hidden;
+}
+
+
+.iconEmailLrg {
+	height: 16px;
+	background-position: 0px -2px;
+}
+.iconEmailLrg:hover { background-position: -20px -2px; }
+
+.iconEmailSml {
+	height: 12px;
+	width: 15px;
+	background-position: -2px -104px;
+	margin-top: -2px;
+}
+.iconEmailSml:hover, .iconWrap:hover .iconEmailSml, .emailOnly:hover .iconEmailSml { background-position: -22px -104px; }
+
+.iconLinkedin,
+.iconTwitter,
+.iconFacebook,
+.iconPinterest,
+.iconSkype, .iconAOL {
+	height: 16px;
+	width: 16px;	
+}
+
+.iconLinkedin { background-position: -2px -22px; }
+.iconLinkedin:hover { background-position: -22px -22px; }
+
+.iconTwitter { background-position: -2px -42px; }
+.iconTwitter:hover { background-position: -22px -42px; }
+
+.iconFacebook { background-position: -2px -62px; }
+.iconFacebook:hover { background-position: -22px -62px; }
+
+.iconPinterest { background-position: -2px -82px; }
+.iconPinterest:hover { background-position: -22px -82px; }
+
+.iconSkype {
+	background-position: -2px -182px;
+	margin-top: -2px;
+}
+.iconSkype:hover, .iconWrap:hover > .iconSkype { background-position: -22px -182px; }
+
+.iconAOL { background-position: -2px -162px; }
+.iconAOL:hover, .iconWrap:hover > .iconAOL { background-position: -22px -162px; }
+
+.iconOffice {
+	height: 16px;
+	background-position: -3px -122px;
+	width: 15px;
+	margin-top: -5px;
+	}
+.iconOfficeSmall {
+	height: 13px;
+	background-position: -42px -122px;
+	width: 12px;
+	margin-top: -5px;
+}
+
+.iconMobile {
+	height: 16px;
+	background-position: -5px -142px;
+	width: 10px;
+	margin-top: -3px;
+}
+.iconMobileSmall {
+	height: 13px;
+	background-position: -45px -142px;
+	width: 9px;
+	margin-top: -3px;
+}
+
+.iconDivisionSmall {
+	height: 13px;
+	background-position: -41px -181px;
+	width: 15px;
+	margin-top: -2px;
+}
+
+.iconHammerSmall {
+	height: 13px;
+	background-position: -1px -221px;
+	width: 13px;
+	margin-top: -3px;
+}
+
+.iconEmployeeNumber {
+	height: 13px;
+	background-position: -61px -221px;
+	width: 16px;
+	margin-top: -3px;
+}
+
+.iconPeopleSmall {
+	height: 11px;
+	background-position: -41px -201px;
+	width: 13px;
+	margin-top: -4px;
+}
+.iconPersonLrg {
+	width: 15px;
+	height: 17px;
+	background-image: url('/images/color-branded-icons/sprite-employees.png');
+	background-repeat: no-repeat;
+	background-position: -40px 0px;
+}
+	
+.iconLocationSmall {
+	height: 13px;
+	background-position: -21px -221px;
+	width: 10px;
+	margin-top: -3px;
+}
+
+.iconSalarySmall {
+	height: 13px;
+	background-position: -41px -221px;
+	width: 11px;
+	margin-top: -4px;
+}
+
+.employeeIcons.iconPeople {
+	background-position: 0px -201px;
+	background-color: transparent;
+	width: 16px;
+	height: 10px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+
+.infoColumn .icon[class^="icon"]:before {
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-image: url('/images/color-branded-icons/sprite-employees.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 2px;
+	left: 3px;
+}
+
+.infoColumn .iconPerson:before { background-position: -1px -241px; width: 11px !important; top: 2px !important; }
+.infoColumn .iconPerson:hover:before { background-position: -21px -241px; }
+.infoColumn .iconPeople2:before { background-position: -42px -242px; width: 14px !important; top: 3px !important; }
+.infoColumn .iconPeople2:hover:before { background-position: -61px -242px; }
+.infoColumn .iconJobOpening:before { background-position: -80px -243px; left: 0px !important; top: 4px !important; }
+.infoColumn .iconJobOpening:hover:before { background-position: -100px -243px; }
+
+.profile-photo-container div#cropper-container {
+    min-height: 185px;
+}
+/**
+* Main tab content icons
+**/
+.employeeTabIcons:before {
+	content: '';
+	margin: 0px 6px 0px 0px;
+	display: block;
+	float: left;
+	background-image: url('/images/color-branded-icons/sprite-employees.png');
+	background-repeat: no-repeat;
+}
+.tabEmergencyIcon:before {
+	content: '';
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	background-position: -61px -101px;
+	margin-top: 2px;
+}
+.tabNotesIcon:before {
+	content: '';
+	display: inline-block;
+	width: 25px;
+	height: 18px;
+	background-position: -61px -21px;
+}
+.tabPersonalIcon:before {
+	margin-top: 1px;
+	width: 24px;
+	height: 19px;
+	background-position: -61px 0px;
+}
+.tabPTOIcon:before {
+	width: 24px;
+	height: 20px;
+	background-position: -61px -179px;
+}
+.tabDocumentIcon:before {
+	width: 15px;
+	height: 20px;
+	background-position: -61px -79px;
+}
+.tabJobIcon:before {
+	width: 22px;
+	height: 20px;
+	background-position: -61px -59px;
+}
+.tabBenefitsIcon:before {
+	width: 23px;
+	height: 20px;
+	background-position: -61px -39px;
+}
+.tabOnboardingIcon:before {
+	width: 23px;
+	height: 20px;
+	background-position: -61px -139px;
+}
+.tabOffboardingIcon:before {
+	width: 24px;
+	height: 20px;
+	background-position: -61px -119px;
+}
+.tabDependentsIcon:before {
+	width: 24px;
+	height: 20px;
+	background-position: -61px -119px;
+}
+.tabTrainingIcon:before {
+	width: 23px;
+	height: 19px;
+	background-position: -61px -199px;
+}
+.tabCustomIcon:before {
+	width: 22px;
+	height: 20px;
+	background-position: -61px -159px;
+}
+.tabNotesIcon:before {
+	width: 25px;
+	height: 20px;
+	background-position: -61px -19px;
+}
+
+/**
+* Pagination
+**/
+.pagination {
+	float: right;
+	margin-top: 8px;
+	margin-right: 8px;
+	font-size: 13px;
+	color:#8f8f8f;
+}
+.pagination .count { color: #777777; }
+.pagination .pages {
+	display:inline-block;
+	margin: 0 14px 0 12px;
+}
+.pagination .pages > a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 0px 5px 1px 5px;
+	border:solid transparent 1px;
+}
+.pagination .pages > a:hover { border: solid #adadad 1px; }
+.pagination .pages > a.current { border: solid #adadad 1px; color: #222222; }
+
+/**
+* Loopings
+**/
+.looping, .looping a { color: #ffffff; }
+.looping a { font-weight: 700; }
+.looping{ 
+	margin-top: 11px;
+	position:absolute;
+	right: 0;
+	top: 45px; 
+}
+.looping .links { margin-left: 8px; }
+.looping a.looping-prev { margin-right: 5px; }
+.looping a.looping-next { margin-left: 5px; }
+.looping a.looping-prev:before {
+	content: "\00AB";
+	display: inline-block;
+	height: 20px;
+	width: 6px;
+	margin-right: 4px;
+}
+
+.looping a.looping-next:after {
+	content: "\00BB";
+	display: inline-block;
+	height: 20px;
+	width: 6px;
+	margin-left: 5px;
+}
+
+/**
+* Employee info column
+**/
+.infoColumn {
+	float: left;
+	position: relative;
+	top: -102px;
+	color: #777777;
+	font-size: 15px;
+	width: 175px;
+}
+.infoColumn a { font-size: 13px; }
+.infoColumn a.emailOnly { font-size: 15px; }
+.infoColumn a:not(:hover) { color: #777777; }
+.infoColumn .empPhoto {
+	padding: 8px;
+	width: 150px;
+	height: 150px;
+	background: #fff;
+	position: relative;
+}
+
+.infoColumn .employeePhoto {
+	margin-bottom: 24px;
+	width: 166px;
+}
+
+.employeePhoto { position: relative; }
+.employeePhoto.inactive .empPhoto {
+	/* CSS Filters */
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+	filter: gray; /* IE 6-9 */
+}
+.employeePhoto--hover:hover { cursor: pointer; }
+
+.infoColumn .employeePhoto:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 175px;
+	height: 183px;
+	background: url('/images/employee-photo-shadow.png') no-repeat;
+	top: -4px;
+	left: -5px;
+}
+
+.employeePhoto .editLink {
+    display: block;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    border-top: solid #ffffff 3px;
+    border-left: solid #ffffff 3px;
+	opacity: 0;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+.employeePhoto .editLink i{
+	background-image: url('/images/color-branded-icons/sprite-employees.png');
+  background-repeat: no-repeat;
+  background-position: -38px -260px;
+	display: block;
+    height: 13px;
+    width: 15px;
+    position: absolute;
+		bottom: 3px;
+		right: 3px;
+}
+.infoColumn .employeePhoto:hover > .editLink { opacity: 1; }
+.infoColumn .employeePhoto.inactive { margin-bottom: 47px; }
+.employeePhoto.inactive:after {
+    content: '';
+    display: block;
+    width: 114px;
+    height: 50px;
+    background: url('/images/employees/employee-inactive.png') no-repeat;
+    position: absolute;
+    bottom: -40px;
+    left: 0px;
+}
+
+.infoColumn li {
+	margin: 7px 0px;
+	min-height: 18px;
+}
+.infoColumn li,
+.infoColumn h4,
+.infoColumn .truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 169px;
+	min-height: 18px;
+}
+
+.infoColumn h4 {
+	font-weight: 600;
+}
+
+.infoColumn .notTruncate { width: 100%; text-overflow:clip; overflow:visible; white-space:normal }
+.infoColumn li.social { padding: 1px 0 3px; font-size: 13px}
+.infoColumn li.social .employeeIcons { position: static; }
+.infoColumn .icon { position: relative; padding-left: 17px; }
+.infoColumn .directReports .icon[class^="icon"] { padding-left: 21px; }
+.infoColumn .jobOpenings .icon[class^="icon"] { padding-left: 21px; }
+
+/**
+* Direct Reports
+**/
+
+.directReports__overflow { 
+	height: 0;
+	opacity: 0; 
+	overflow: hidden;
+	-webkit-transition: height .5s cubic-bezier(.11,.91,0,1.03) .3s, opacity .2s ease;	
+} 
+
+.directReports__overflow.show {
+	opacity: 1; 
+	-webkit-transition: height .5s cubic-bezier(.11,.91,0,1.03), opacity .2s ease .2s;		
+} 
+
+.directReports__overflow li,
+.infoColumn li.directReports__toggle {
+	margin-top: 0px;
+}
+
+.infoColumn h4 { font-size: 13px; }
+.infoColumn .small { font-size: 13px; }
+.infoColumn .divider {
+	max-width: 167px;
+	border-top: dotted #cdcdcd 1px;
+	margin-top: 15px;
+	padding-top: 11px;
+}
+
+.infoColumn ul.divider { margin-top: 13px; padding-top: 4px; }
+.infoColumn ul.manager { position: relative; margin-bottom: 14px; margin-top: -2px; }
+.infoColumn ul + h4.divider { margin-top: 12px; }
+.infoColumn .note { font-size: 13px; color: #999999; margin-top: 6px; }
+
+.infoColumn .hireInfo { margin-top: -6px; }
+.infoColumn .hireInfo__date { font-weight: 600; }
+
+.infoColumn .manager li { font-size: 14px; padding-left: 33px; margin-top: 7px; }
+.infoColumn .manager img { position: absolute; left: 0px; top: 3px; }
+.infoColumn .manager div { width: 130px; }
+.infoColumn .manager div:first-of-type { margin-top: 0px; }
+.infoColumn .manager .manager__name,
+.infoColumn .manager .manager__name a:not(:hover) { color: #646464; }
+.infoColumn .manager .note { display: block; margin-top: 0px; }
+
+.infoColumn .employeeIcons {
+	position: absolute;
+	top: 4px;
+	left: 0px;
+}
+
+.infoColumn .iconOfficeSmall { top: 6px; }
+.infoColumn .iconPeopleSmall { top: 6px; }
+.infoColumn .iconLocationSmall { top: 5px; }
+.infoColumn .iconSalarySmall { top: 6px; }
+.infoColumn .iconHammerSmall { top: 5px; }
+
+/**
+* Content top styles - for employee records
+**/
+.employeeSection #content { position: relative; margin-top: 0; }
+
+.employeeSection #contentTop, #employeeNav { padding-left: 208px; }
+
+#employeeNav { min-width: 0; }
+
+#employeeNav .menu {
+	visibility: hidden;
+	overflow: hidden;
+	height: 36px;	
+}
+
+#employeeNav .bhrCollapseTab a { 
+	max-width: 200px;
+}
+
+.employeeSection #contentTop h2, .employeeSection #contentTop h3 {
+	color: #ffffff;
+	margin-left: 3px;
+}
+
+.employeeSection #contentTop h2 { margin-top: 17px; }
+.employeeSection #contentTop h3 {
+	font-weight: 600;
+	margin-top: -1px;
+}
+
+.employeeSection #contentTop .right {
+	padding-top: 17px;
+	padding-bottom: 0;
+	width: 230px;
+	position: relative;
+}
+
+#contentTop h2 .count {
+	font-weight: 400;
+	font-size: 18px;
+	color: #808080;
+}
+
+.employeeSection #contentTop .left { width: 68%; }
+
+/**
+* Main Tab content styles
+**/
+.tabContent {
+	position: relative;
+	float: left;
+	margin-left: 47px;
+	margin-top: 35px;
+	padding: 0;
+	width: calc(100% - 222px);
+}
+
+.tabContent .tabHeader {
+	border-bottom: solid #afafaf 1px;
+	padding-bottom: 6px;
+	margin-bottom: 5px;
+}
+.tabContent .tabHeader h3 {
+	float: left;
+	width: 80%;
+}
+.tabContent .tabHeader h3 + a { float: right; margin: 7px 5px 0 0; }
+.tabContent .tabHeader h3 + a:not(:hover) { color: #888888; }
+
+.tabContent .tabHeader #addLinks {
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+
+.tabContent .tabCustomize {
+	position: absolute;
+	top: 2px;
+	right: 0;
+}
+
+.tabContent .tabCustomize a { color: #888888 }
+
+.contentContainer {
+	margin: 20px 0 30px;
+}
+.contentContainer--extraSpace { margin: 25px 0 30px; }
+
+.contentContainer h3 {
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 9px;
+}
+.contentContainer .contentBar { margin-bottom: 8px; }
+.contentContainer .contentBar .floatRight {
+	font-size: 13px;
+	line-height: 23px;
+}
+
+.tornEdgeContainer .emergencyContactInfo {
+    text-align: center;
+}
+.tornEdgeContainer .emergencyContactName {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+.tornEdgeContainer .emergencyContactRelationship {
+    font-size: 12px;
+    font-weight: normal;
+    color: #999;
+}
+
+.deleteModal .subText {
+	font-size: 14px;
+	color: #555555;
+}
+
+/**
+* Modal Page Header
+**/
+
+.modalEmployeeHeader {
+	position: relative;
+	padding-bottom: 5px;
+}
+
+.modalEmployeeHeader:after {
+	content: '';
+	height: 1px;
+	background-color: #AFAFAF;
+	display: block;
+	position:absolute;
+	right: 0px;
+	left: -19px;
+	bottom: 0;
+}
+
+/** Delete modal styles **/
+.deleteModal { width: auto; }
+.deleteModal .tornEdgeContainer { padding-top: 13px; }
+.deleteModal .title {
+	font-size: 20px;
+	line-height: 18px;
+}
+
+/** employee gear menu drop down **/
+#employeeGearMenu{
+	z-index:100;
+	margin-top: 1px;
+	position:absolute;
+	right: 0;
+	top: 17px;
+}
+
+/* generic */
+.BhrForms .error + .fieldBox #ssa_msg_on {
+	color: #cf6240;
+}
+.BhrForms .error + .fieldBox #ssa_msg_on:before {
+	content: url(/images/bicons/field-error.png);
+display: inline-block;
+margin: 0 3px 0px 0;
+}

@@ -1,0 +1,2122 @@
+2020-10-07 15:27:01 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/pause.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:27:01 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'cd8a0994086a87ccd6cce0ae921b6f39ea175a3e587435e5d462357987d98038a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"I1LZlGXq8WvXgID2bT-Kau6KfTJbyJ2N\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=cd8a0994086a87ccd6cce0ae921b6f39ea175a3e587435e5d462357987d98038a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22I1LZlGXq8WvXgID2bT-Kau6KfTJbyJ2N%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '52105'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602066421.172
+    'REQUEST_TIME' => 1602066421
+]
+2020-10-07 15:27:01 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/previous.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:27:01 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'cd8a0994086a87ccd6cce0ae921b6f39ea175a3e587435e5d462357987d98038a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"I1LZlGXq8WvXgID2bT-Kau6KfTJbyJ2N\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=cd8a0994086a87ccd6cce0ae921b6f39ea175a3e587435e5d462357987d98038a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22I1LZlGXq8WvXgID2bT-Kau6KfTJbyJ2N%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '52093'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602066421.152
+    'REQUEST_TIME' => 1602066421
+]
+2020-10-07 15:27:01 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/next.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:27:01 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'cd8a0994086a87ccd6cce0ae921b6f39ea175a3e587435e5d462357987d98038a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"I1LZlGXq8WvXgID2bT-Kau6KfTJbyJ2N\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=cd8a0994086a87ccd6cce0ae921b6f39ea175a3e587435e5d462357987d98038a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22I1LZlGXq8WvXgID2bT-Kau6KfTJbyJ2N%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '52103'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602066421.173
+    'REQUEST_TIME' => 1602066421
+]
+2020-10-07 15:33:55 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/previous.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:33:55 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'cd8a0994086a87ccd6cce0ae921b6f39ea175a3e587435e5d462357987d98038a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"I1LZlGXq8WvXgID2bT-Kau6KfTJbyJ2N\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=cd8a0994086a87ccd6cce0ae921b6f39ea175a3e587435e5d462357987d98038a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22I1LZlGXq8WvXgID2bT-Kau6KfTJbyJ2N%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '52366'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602066835.946
+    'REQUEST_TIME' => 1602066835
+]
+2020-10-07 15:33:55 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/next.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:33:55 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'cd8a0994086a87ccd6cce0ae921b6f39ea175a3e587435e5d462357987d98038a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"I1LZlGXq8WvXgID2bT-Kau6KfTJbyJ2N\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=cd8a0994086a87ccd6cce0ae921b6f39ea175a3e587435e5d462357987d98038a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22I1LZlGXq8WvXgID2bT-Kau6KfTJbyJ2N%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '52381'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602066835.946
+    'REQUEST_TIME' => 1602066835
+]
+2020-10-07 15:33:55 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/pause.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:33:55 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'cd8a0994086a87ccd6cce0ae921b6f39ea175a3e587435e5d462357987d98038a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"I1LZlGXq8WvXgID2bT-Kau6KfTJbyJ2N\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=cd8a0994086a87ccd6cce0ae921b6f39ea175a3e587435e5d462357987d98038a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22I1LZlGXq8WvXgID2bT-Kau6KfTJbyJ2N%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '52386'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602066835.946
+    'REQUEST_TIME' => 1602066835
+]
+2020-10-07 15:42:36 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/previous.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:42:36 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => '378075ebcd9a7087981c8f5c9fbc585d72aefe9d9091506153f83fc8da2a048ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KXgcgncxcheCvFlYhjdF7Xp38s-OZw0G\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=378075ebcd9a7087981c8f5c9fbc585d72aefe9d9091506153f83fc8da2a048ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KXgcgncxcheCvFlYhjdF7Xp38s-OZw0G%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '52890'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602067356.777
+    'REQUEST_TIME' => 1602067356
+]
+2020-10-07 15:42:36 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/pause.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:42:36 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => '378075ebcd9a7087981c8f5c9fbc585d72aefe9d9091506153f83fc8da2a048ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KXgcgncxcheCvFlYhjdF7Xp38s-OZw0G\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=378075ebcd9a7087981c8f5c9fbc585d72aefe9d9091506153f83fc8da2a048ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KXgcgncxcheCvFlYhjdF7Xp38s-OZw0G%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '52893'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602067356.777
+    'REQUEST_TIME' => 1602067356
+]
+2020-10-07 15:42:36 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/next.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:42:36 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => '378075ebcd9a7087981c8f5c9fbc585d72aefe9d9091506153f83fc8da2a048ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KXgcgncxcheCvFlYhjdF7Xp38s-OZw0G\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=378075ebcd9a7087981c8f5c9fbc585d72aefe9d9091506153f83fc8da2a048ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KXgcgncxcheCvFlYhjdF7Xp38s-OZw0G%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '52896'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602067356.778
+    'REQUEST_TIME' => 1602067356
+]
+2020-10-07 15:42:42 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/resume.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:42:42 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => '378075ebcd9a7087981c8f5c9fbc585d72aefe9d9091506153f83fc8da2a048ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KXgcgncxcheCvFlYhjdF7Xp38s-OZw0G\";}'
+    '_gat_gtag_UA_97109882_1' => '1'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=378075ebcd9a7087981c8f5c9fbc585d72aefe9d9091506153f83fc8da2a048ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KXgcgncxcheCvFlYhjdF7Xp38s-OZw0G%22%3B%7D; _gat_gtag_UA_97109882_1=1'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '52924'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/resume.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/resume.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602067362.263
+    'REQUEST_TIME' => 1602067362
+]
+2020-10-07 15:59:22 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/previous.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:59:22 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'c646727fdeb38347fb487ff8e089365c7710736bbe15488de0e7f276210561b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5JYvd22S6oKD2iUYg_clQmi_VLGIKTmv\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=c646727fdeb38347fb487ff8e089365c7710736bbe15488de0e7f276210561b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225JYvd22S6oKD2iUYg_clQmi_VLGIKTmv%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '53137'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602068362.094
+    'REQUEST_TIME' => 1602068362
+]
+2020-10-07 15:59:22 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/pause.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:59:22 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'c646727fdeb38347fb487ff8e089365c7710736bbe15488de0e7f276210561b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5JYvd22S6oKD2iUYg_clQmi_VLGIKTmv\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=c646727fdeb38347fb487ff8e089365c7710736bbe15488de0e7f276210561b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225JYvd22S6oKD2iUYg_clQmi_VLGIKTmv%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '53142'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602068362.094
+    'REQUEST_TIME' => 1602068362
+]
+2020-10-07 15:59:22 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/next.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:59:22 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'c646727fdeb38347fb487ff8e089365c7710736bbe15488de0e7f276210561b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5JYvd22S6oKD2iUYg_clQmi_VLGIKTmv\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=c646727fdeb38347fb487ff8e089365c7710736bbe15488de0e7f276210561b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225JYvd22S6oKD2iUYg_clQmi_VLGIKTmv%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '53141'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602068362.095
+    'REQUEST_TIME' => 1602068362
+]
+2020-10-07 15:59:35 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/resume.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 15:59:35 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'c646727fdeb38347fb487ff8e089365c7710736bbe15488de0e7f276210561b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5JYvd22S6oKD2iUYg_clQmi_VLGIKTmv\";}'
+    '_gat_gtag_UA_97109882_1' => '1'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=c646727fdeb38347fb487ff8e089365c7710736bbe15488de0e7f276210561b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225JYvd22S6oKD2iUYg_clQmi_VLGIKTmv%22%3B%7D; _gat_gtag_UA_97109882_1=1'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '53180'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/resume.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/resume.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602068375.063
+    'REQUEST_TIME' => 1602068375
+]
+2020-10-07 16:06:23 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/previous.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 16:06:23 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'f4936fb8432c8c28924abb21edcc52f662f4cc3a3b7591124abedbbeccf1a78da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XChNMvqCqZEqWtyDmBWnzYncvQXXWY49\";}'
+    '_gat_gtag_UA_97109882_1' => '1'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=f4936fb8432c8c28924abb21edcc52f662f4cc3a3b7591124abedbbeccf1a78da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XChNMvqCqZEqWtyDmBWnzYncvQXXWY49%22%3B%7D; _gat_gtag_UA_97109882_1=1'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '53258'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602068783.955
+    'REQUEST_TIME' => 1602068783
+]
+2020-10-07 16:06:23 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/pause.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 16:06:23 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'f4936fb8432c8c28924abb21edcc52f662f4cc3a3b7591124abedbbeccf1a78da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XChNMvqCqZEqWtyDmBWnzYncvQXXWY49\";}'
+    '_gat_gtag_UA_97109882_1' => '1'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=f4936fb8432c8c28924abb21edcc52f662f4cc3a3b7591124abedbbeccf1a78da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XChNMvqCqZEqWtyDmBWnzYncvQXXWY49%22%3B%7D; _gat_gtag_UA_97109882_1=1'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '53259'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602068783.955
+    'REQUEST_TIME' => 1602068783
+]
+2020-10-07 16:06:24 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/next.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 16:06:23 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.119672780.1602065159'
+    '_csrf' => 'f4936fb8432c8c28924abb21edcc52f662f4cc3a3b7591124abedbbeccf1a78da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XChNMvqCqZEqWtyDmBWnzYncvQXXWY49\";}'
+    '_gat_gtag_UA_97109882_1' => '1'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.119672780.1602065159; _csrf=f4936fb8432c8c28924abb21edcc52f662f4cc3a3b7591124abedbbeccf1a78da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XChNMvqCqZEqWtyDmBWnzYncvQXXWY49%22%3B%7D; _gat_gtag_UA_97109882_1=1'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '53262'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602068783.959
+    'REQUEST_TIME' => 1602068783
+]
+2020-10-07 16:53:40 [::1][-][bog6j43jt7semmcvk3cu0vqn4s][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/previous.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(388): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(388): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 16:53:40 [::1][-][bog6j43jt7semmcvk3cu0vqn4s][info][application] $_COOKIE = [
+    'PHPSESSID' => 'bog6j43jt7semmcvk3cu0vqn4s'
+    '_ga' => 'GA1.1.1951463212.1602071407'
+    '_gid' => 'GA1.1.410646649.1602071407'
+    '_csrf' => 'cb49e4b5f9f56177a2d51360eec8adfdf9331d2b90c32498e2225761be30d2d8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_qC0pofP913rWc6Li-nC8bgYdgovAGDL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.198'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=bog6j43jt7semmcvk3cu0vqn4s; _ga=GA1.1.1951463212.1602071407; _gid=GA1.1.410646649.1602071407; _csrf=cb49e4b5f9f56177a2d51360eec8adfdf9331d2b90c32498e2225761be30d2d8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_qC0pofP913rWc6Li-nC8bgYdgovAGDL%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '53990'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602071620.934
+    'REQUEST_TIME' => 1602071620
+]
+2020-10-07 16:53:40 [::1][-][bog6j43jt7semmcvk3cu0vqn4s][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/next.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(388): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(388): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 16:53:40 [::1][-][bog6j43jt7semmcvk3cu0vqn4s][info][application] $_COOKIE = [
+    'PHPSESSID' => 'bog6j43jt7semmcvk3cu0vqn4s'
+    '_ga' => 'GA1.1.1951463212.1602071407'
+    '_gid' => 'GA1.1.410646649.1602071407'
+    '_csrf' => 'cb49e4b5f9f56177a2d51360eec8adfdf9331d2b90c32498e2225761be30d2d8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_qC0pofP913rWc6Li-nC8bgYdgovAGDL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.198'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=bog6j43jt7semmcvk3cu0vqn4s; _ga=GA1.1.1951463212.1602071407; _gid=GA1.1.410646649.1602071407; _csrf=cb49e4b5f9f56177a2d51360eec8adfdf9331d2b90c32498e2225761be30d2d8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_qC0pofP913rWc6Li-nC8bgYdgovAGDL%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '53991'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602071620.935
+    'REQUEST_TIME' => 1602071620
+]
+2020-10-07 16:53:40 [::1][-][bog6j43jt7semmcvk3cu0vqn4s][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/pause.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(388): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(388): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 16:53:40 [::1][-][bog6j43jt7semmcvk3cu0vqn4s][info][application] $_COOKIE = [
+    'PHPSESSID' => 'bog6j43jt7semmcvk3cu0vqn4s'
+    '_ga' => 'GA1.1.1951463212.1602071407'
+    '_gid' => 'GA1.1.410646649.1602071407'
+    '_csrf' => 'cb49e4b5f9f56177a2d51360eec8adfdf9331d2b90c32498e2225761be30d2d8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_qC0pofP913rWc6Li-nC8bgYdgovAGDL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.198'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=bog6j43jt7semmcvk3cu0vqn4s; _ga=GA1.1.1951463212.1602071407; _gid=GA1.1.410646649.1602071407; _csrf=cb49e4b5f9f56177a2d51360eec8adfdf9331d2b90c32498e2225761be30d2d8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_qC0pofP913rWc6Li-nC8bgYdgovAGDL%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '53992'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602071620.935
+    'REQUEST_TIME' => 1602071620
+]
+2020-10-07 16:53:44 [::1][-][bog6j43jt7semmcvk3cu0vqn4s][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/resume.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(388): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(388): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 16:53:44 [::1][-][bog6j43jt7semmcvk3cu0vqn4s][info][application] $_COOKIE = [
+    'PHPSESSID' => 'bog6j43jt7semmcvk3cu0vqn4s'
+    '_ga' => 'GA1.1.1951463212.1602071407'
+    '_gid' => 'GA1.1.410646649.1602071407'
+    '_csrf' => 'cb49e4b5f9f56177a2d51360eec8adfdf9331d2b90c32498e2225761be30d2d8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_qC0pofP913rWc6Li-nC8bgYdgovAGDL\";}'
+    '_gat_gtag_UA_97109882_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.198'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=bog6j43jt7semmcvk3cu0vqn4s; _ga=GA1.1.1951463212.1602071407; _gid=GA1.1.410646649.1602071407; _csrf=cb49e4b5f9f56177a2d51360eec8adfdf9331d2b90c32498e2225761be30d2d8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_qC0pofP913rWc6Li-nC8bgYdgovAGDL%22%3B%7D; _gat_gtag_UA_97109882_1=1'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '53988'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/resume.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/resume.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602071624.969
+    'REQUEST_TIME' => 1602071624
+]
+2020-10-07 18:27:04 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/previous.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 18:27:04 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.802285293.1602075377'
+    '_gat_gtag_UA_97109882_1' => '1'
+    '_csrf' => 'ee78b38c2d93ab129e0b270e3d6e475ed36c9410abd456ef44ddbaae93b426d8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Pp0bIIASDqP2buGwpJyx-6DnTnr3kWR-\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.802285293.1602075377; _gat_gtag_UA_97109882_1=1; _csrf=ee78b38c2d93ab129e0b270e3d6e475ed36c9410abd456ef44ddbaae93b426d8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Pp0bIIASDqP2buGwpJyx-6DnTnr3kWR-%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '55939'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/previous.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602077224.53
+    'REQUEST_TIME' => 1602077224
+]
+2020-10-07 18:27:04 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/pause.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 18:27:04 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.802285293.1602075377'
+    '_gat_gtag_UA_97109882_1' => '1'
+    '_csrf' => 'ee78b38c2d93ab129e0b270e3d6e475ed36c9410abd456ef44ddbaae93b426d8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Pp0bIIASDqP2buGwpJyx-6DnTnr3kWR-\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.802285293.1602075377; _gat_gtag_UA_97109882_1=1; _csrf=ee78b38c2d93ab129e0b270e3d6e475ed36c9410abd456ef44ddbaae93b426d8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Pp0bIIASDqP2buGwpJyx-6DnTnr3kWR-%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '55943'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/pause.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602077224.53
+    'REQUEST_TIME' => 1602077224
+]
+2020-10-07 18:27:04 [::1][-][oislarksqgekngm8c85drc4fj8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/images/icons/next.png". in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/images/icon...', Array)
+#1 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\roznama\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\roznama\efrontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-07 18:27:04 [::1][-][oislarksqgekngm8c85drc4fj8][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.272941533.1578462163'
+    'PHPSESSID' => 'oislarksqgekngm8c85drc4fj8'
+    '_gid' => 'GA1.1.802285293.1602075377'
+    '_gat_gtag_UA_97109882_1' => '1'
+    '_csrf' => 'ee78b38c2d93ab129e0b270e3d6e475ed36c9410abd456ef44ddbaae93b426d8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Pp0bIIASDqP2buGwpJyx-6DnTnr3kWR-\";}'
+]
+
+$_SESSION = [
+    'login' => true
+    'role' => 'Admin'
+    'province' => 'Punjab'
+    'city' => 'Lahore'
+    'bureau' => 'Gulberg II Bureau'
+    'provinceID' => '1'
+    'cityID' => null
+    'bureauID' => '3'
+    'username' => 'admin'
+    'userID' => '1'
+    'showError' => null
+    '__flash' => []
+    '__returnUrl' => '/roznama/backend/web/uploads/epaper/2/2020/10/02102020/1074973592_fp.jpg'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://localhost/roznama/efrontend/web/css/style.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.272941533.1578462163; PHPSESSID=oislarksqgekngm8c85drc4fj8; _gid=GA1.1.802285293.1602075377; _gat_gtag_UA_97109882_1=1; _csrf=ee78b38c2d93ab129e0b270e3d6e475ed36c9410abd456ef44ddbaae93b426d8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Pp0bIIASDqP2buGwpJyx-6DnTnr3kWR-%22%3B%7D'
+    'PATH' => 'E:\\app\\tuf\\product\\11.2.0\\dbhome_1\\bin;E:\\oracle\\product\\10.2.0\\db_1\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;E:\\vagrant\\bin;C:\\Python34.;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\tuf\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\tuf\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\tuf\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\tuf\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\tuf\\AppData\\Roaming\\npm;C:\\Users\\tuf\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/roznama/efrontend/web/index.php'
+    'REMOTE_PORT' => '55942'
+    'REDIRECT_URL' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/roznama/efrontend/web/css/images/icons/next.png'
+    'SCRIPT_NAME' => '/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/roznama/efrontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1602077224.53
+    'REQUEST_TIME' => 1602077224
+]
