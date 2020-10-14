@@ -8,9 +8,12 @@ return [
     'name' => 'Daily 92 Roznama ePaper',
     'homeUrl' => '/',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log', 'plugins'],
+    'bootstrap' => ['log', 'plugins', 'debug'],
     'controllerNamespace' => 'frontend\controllers',
     'modules' => [
+        'debug' => [
+            'class' => 'yii\debug\Module',
+        ],
 
 'sitemap' => [
         'class' => 'himiklab\sitemap\Sitemap',
