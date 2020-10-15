@@ -25,7 +25,7 @@ return [
                 'showScriptName' => false,
             ],
  'cache' => [
-           'class' => 'yii\caching\FileCache',
+     'class' => 'yii\caching\DummyCache',//'class' => 'yii\caching\FileCache',
             //'class' => 'yii\redis\Cache',
           ], 
             'assetManager' => [

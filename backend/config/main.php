@@ -93,17 +93,17 @@ return [
     ],
     'components' => [
  'frontcache' => [
-           'class' => 'yii\caching\FileCache',
+     'class' => 'yii\caching\DummyCache', //'class' => 'yii\caching\FileCache',
             'cachePath' => Yii::getAlias('@frontend') . '/runtime/cache'
             //'class' => 'yii\redis\Cache',
           ], 
  'efrontcache' => [
-           'class' => 'yii\caching\FileCache',
+     'class' => 'yii\caching\DummyCache',//'class' => 'yii\caching\FileCache',
             'cachePath' => Yii::getAlias('@efrontend') . '/runtime/cache'
             //'class' => 'yii\redis\Cache',
           ],                
          'cache' => [
-            'class' => 'yii\caching\FileCache',
+             'class' => 'yii\caching\DummyCache',//'class' => 'yii\caching\FileCache',
           ],
           'plugins' => [
                 'class' => lo\plugins\components\PluginsManager::class,
