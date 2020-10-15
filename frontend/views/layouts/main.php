@@ -63,10 +63,10 @@ AppAsset::register($this);
     </div>
 
     <?php
-//to be changed
-$query = Post::find()->where([
+
+$query = Post::find()->joinWith('cats')->where([
             'status' => Post::STATUS_PUBLISHED,
-            
+            Category::tableName() . '.slug' => 'taz-tryn-khbr',
         ])->orderBy('published_at DESC')->limit(10)->all();
 
 

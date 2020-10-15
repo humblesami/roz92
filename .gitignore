@@ -9,6 +9,9 @@ nbproject
 .project
 .settings
 
+*/runtime/cache
+*/runtime/debug
+*/runtime/logs
 # windows thumbnail cache
 Thumbs.db
 

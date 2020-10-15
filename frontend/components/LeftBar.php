@@ -145,14 +145,11 @@ class LeftBar extends Widget{
 		}
 		
 		$menu_ul = '<ul ' . $mclass . '>';
+
         foreach($menu_data_row as $key => $value){
 			$feature_id_data = explode("~",$value->id);
-			// tobe changed
-			if(count($feature_id_data) < 2)
-			{
-				print('hi');
-				continue;
-			}
+
+
 			$feature_id = $feature_id_data[0];
 			$type = $feature_id_data[1];
 			$d_menu_name = $feature_id_data[2];
