@@ -66,7 +66,9 @@ return [
     ],
 
  'cache' => [
-            'class' => 'yii\caching\FileCache',
+     //to be changed
+//            'class' => 'yii\caching\FileCache',
+     'class'=>'yii\caching\DummyCache',
           ],
 /*'assetManager' => [
     'bundles' => [

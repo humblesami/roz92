@@ -27,7 +27,8 @@ return [
             // your additional urls
             [
                 'loc' => 'https://www.roznama92news.com',
-                'changefreq' => \himiklab\sitemap\behaviors\SitemapBehavior::CHANGEFREQ_DAILY,
+                //to be changed uncomment
+//                'changefreq' => \himiklab\sitemap\behaviors\SitemapBehavior::CHANGEFREQ_DAILY,
                 'priority' => 0.8,
                
               
@@ -93,17 +94,23 @@ return [
     ],
     'components' => [
  'frontcache' => [
-           'class' => 'yii\caching\FileCache',
-            'cachePath' => Yii::getAlias('@frontend') . '/runtime/cache'
+     //to be changed uncomment
+     'class'=>'yii\caching\DummyCache',
+//     'class' => 'yii\caching\FileCache',
+//            'cachePath' => Yii::getAlias('@frontend') . '/runtime/cache'
             //'class' => 'yii\redis\Cache',
           ], 
  'efrontcache' => [
-           'class' => 'yii\caching\FileCache',
-            'cachePath' => Yii::getAlias('@efrontend') . '/runtime/cache'
+     //to be changed uncomment
+     'class'=>'yii\caching\DummyCache',
+//           'class' => 'yii\caching\FileCache',
+//            'cachePath' => Yii::getAlias('@efrontend') . '/runtime/cache'
             //'class' => 'yii\redis\Cache',
           ],                
          'cache' => [
-            'class' => 'yii\caching\FileCache',
+             //to be changed uncomment
+             'class'=>'yii\caching\DummyCache',
+//            'class' => 'yii\caching\FileCache',
           ],
           'plugins' => [
                 'class' => lo\plugins\components\PluginsManager::class,

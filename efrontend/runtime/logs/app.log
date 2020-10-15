@@ -2120,3 +2120,2050 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1602077224.53
     'REQUEST_TIME' => 1602077224
 ]
+2020-10-15 13:25:14 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 13:25:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '14114'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '16293'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '43370'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=14114'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=14114'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=16293'
+    'REQUEST_TIME_FLOAT' => 1602750314.0494
+    'REQUEST_TIME' => 1602750314
+]
+2020-10-15 13:26:53 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 13:26:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '17522'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '14114'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/?XDEBUG_SESSION_START=16293'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '44298'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=17522'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=17522'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=14114'
+    'REQUEST_TIME_FLOAT' => 1602750412.957
+    'REQUEST_TIME' => 1602750412
+]
+2020-10-15 13:31:26 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 13:31:25 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '15185'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '17522'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/?XDEBUG_SESSION_START=16293'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46532'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=15185'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=15185'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=17522'
+    'REQUEST_TIME_FLOAT' => 1602750685.7881
+    'REQUEST_TIME' => 1602750685
+]
+2020-10-15 13:34:12 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 13:34:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '15534'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '15185'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/?XDEBUG_SESSION_START=16293'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '47996'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=15534'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=15534'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=15185'
+    'REQUEST_TIME_FLOAT' => 1602750852.4863
+    'REQUEST_TIME' => 1602750852
+]
+2020-10-15 13:35:27 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 13:35:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '13411'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '15534'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/?XDEBUG_SESSION_START=16293'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48614'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=13411'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=13411'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=15534'
+    'REQUEST_TIME_FLOAT' => 1602750927.7209
+    'REQUEST_TIME' => 1602750927
+]
+2020-10-15 13:35:38 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 13:35:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '13411'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '13411'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/?XDEBUG_SESSION_START=16293'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48716'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=13411'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=13411'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=13411'
+    'REQUEST_TIME_FLOAT' => 1602750938.2007
+    'REQUEST_TIME' => 1602750938
+]
+2020-10-15 13:36:29 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 13:36:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '13411'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '13411'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/?XDEBUG_SESSION_START=16293'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49152'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=13411'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=13411'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=13411'
+    'REQUEST_TIME_FLOAT' => 1602750989.6874
+    'REQUEST_TIME' => 1602750989
+]
+2020-10-15 13:37:38 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 13:37:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '13411'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '13411'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/?XDEBUG_SESSION_START=16293'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49722'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=13411'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=13411'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=13411'
+    'REQUEST_TIME_FLOAT' => 1602751058.0555
+    'REQUEST_TIME' => 1602751058
+]
+2020-10-15 14:18:20 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 14:18:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '13411'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '13411'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '41742'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=13411'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=13411'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=13411'
+    'REQUEST_TIME_FLOAT' => 1602753500.4045
+    'REQUEST_TIME' => 1602753500
+]
+2020-10-15 14:19:21 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 14:19:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '15079'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '13411'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '42262'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=15079'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=15079'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=13411'
+    'REQUEST_TIME_FLOAT' => 1602753561.7201
+    'REQUEST_TIME' => 1602753561
+]
+2020-10-15 14:21:08 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 14:21:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '15079'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '15079'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '43766'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=15079'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=15079'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=15079'
+    'REQUEST_TIME_FLOAT' => 1602753668.3949
+    'REQUEST_TIME' => 1602753668
+]
+2020-10-15 14:23:40 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 14:21:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '15079'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '15079'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '43980'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=15079'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=15079'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=15079'
+    'REQUEST_TIME_FLOAT' => 1602753693.9864
+    'REQUEST_TIME' => 1602753693
+]
+2020-10-15 14:31:39 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 14:31:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '16791'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '15079'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '49062'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=16791'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=16791'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=15079'
+    'REQUEST_TIME_FLOAT' => 1602754291.069
+    'REQUEST_TIME' => 1602754291
+]
+2020-10-15 14:49:44 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/نواز-شریف-ملکتے-شبلی-فراز in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php:151
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#3 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#1 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2020-10-15 14:49:44 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '16791'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '57984'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/%D9%86%D9%88%D8%A7%D8%B2-%D8%B4%D8%B1%DB%8C%D9%81-%D9%85%D9%84%DA%A9%D8%AA%DB%92-%D8%B4%D8%A8%D9%84%DB%8C-%D9%81%D8%B1%D8%A7%D8%B2'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PATH_INFO' => '/نواز-شریف-ملکتے-شبلی-فراز'
+    'PHP_SELF' => '/index.php/نواز-شریف-ملکتے-شبلی-فراز'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/?XDEBUG_SESSION_START=17614'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=16791'
+    'REQUEST_TIME_FLOAT' => 1602755383.9766
+    'REQUEST_TIME' => 1602755383
+]
+2020-10-15 14:50:20 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 14:50:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '13128'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '16791'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '58290'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=13128'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=13128'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=16791'
+    'REQUEST_TIME_FLOAT' => 1602755420.5882
+    'REQUEST_TIME' => 1602755420
+]
+2020-10-15 15:22:47 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 15:22:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '13128'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '13128'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46050'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=13128'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=13128'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=13128'
+    'REQUEST_TIME_FLOAT' => 1602757367.1727
+    'REQUEST_TIME' => 1602757367
+]
+2020-10-15 15:22:59 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 15:22:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '13128'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '13128'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46162'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=13128'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=13128'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=13128'
+    'REQUEST_TIME_FLOAT' => 1602757379.062
+    'REQUEST_TIME' => 1602757379
+]
+2020-10-15 15:24:00 [127.0.0.1][-][-][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: yeesoft\post\models\Post::getcats() in /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Component.php:300
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1244): yii\base\Component->__call()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#7 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#8 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#9 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#13 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#14 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#15 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#16 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#20 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#21 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#22 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#27 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#28 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next yii\base\InvalidArgumentException: yeesoft\post\models\Post has no relation named "cats". in /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/BaseActiveRecord.php:1247
+Stack trace:
+#0 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/Query.php(248): yii\db\ActiveQuery->createCommand()
+#6 /home/sami/laravel/roznama/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#7 /home/sami/laravel/roznama/vendor/yeesoft/yii2-yee-post/models/PostQuery.php(29): yii\db\ActiveQuery->all()
+#8 /home/sami/laravel/roznama/efrontend/components/views/header.php(31): yeesoft\post\models\PostQuery->all()
+#9 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#10 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#11 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#12 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(236): yii\base\View->render()
+#13 /home/sami/laravel/roznama/efrontend/components/Header.php(19): yii\base\Widget->render()
+#14 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Widget.php(140): app\components\Header->run()
+#15 /home/sami/laravel/roznama/efrontend/views/layouts/main.php(45): yii\base\Widget::widget()
+#16 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(348): require('/home/sami/lara...')
+#17 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#18 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->renderFile()
+#19 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(410): yii\base\Controller->renderContent()
+#20 /home/sami/laravel/roznama/efrontend/controllers/SiteController.php(129): yii\base\Controller->render()
+#21 [internal function]: efrontend\controllers\SiteController->actionIndex()
+#22 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#23 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams()
+#24 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#25 /home/sami/laravel/roznama/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#26 /home/sami/laravel/roznama/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#27 /home/sami/laravel/roznama/efrontend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2020-10-15 15:24:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => '13128'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'session_id' => 'c799532f14f7cb559b8c310285be6efe1840e1ca'
+    'csrftoken' => '5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe'
+    '_csrf' => 'ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bERu0SErnsgG1UvTwnaikjex2syqyy1h\";}'
+    'PHPSESSID' => 'tmbel16fqibj2ujqts40ombqkp'
+    '__gads' => 'ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ'
+    '_ga' => 'GA1.1.1875032886.1602673740'
+    '_gid' => 'GA1.1.7921957.1602673741'
+    'XDEBUG_SESSION' => '13128'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/sami/laravel/roznama/efrontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46662'
+    'SERVER_SOFTWARE' => 'PHP 7.4.3 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/?XDEBUG_SESSION_START=13128'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/sami/laravel/roznama/efrontend/web/index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=13128'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-PK,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'session_id=c799532f14f7cb559b8c310285be6efe1840e1ca; csrftoken=5fEo5rLrQhobtus5S6G6bHOJsxiGUDhx7bmsVfV9fa1Y6OkqEWORiDYk8W9y6lKe; _csrf=ab58aa5e736be4bb2a76f055209b2c49badd6182623a0d211ccc47fde3647625a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bERu0SErnsgG1UvTwnaikjex2syqyy1h%22%3B%7D; PHPSESSID=tmbel16fqibj2ujqts40ombqkp; __gads=ID=c93dbd88d5b295cd-2232615143a600e8:T=1602673740:RT=1602673740:S=ALNI_MZzn6oD8wMwRD_hxvR0l35QBh15YQ; _ga=GA1.1.1875032886.1602673740; _gid=GA1.1.7921957.1602673741; XDEBUG_SESSION=13128'
+    'REQUEST_TIME_FLOAT' => 1602757440.0102
+    'REQUEST_TIME' => 1602757440
+]

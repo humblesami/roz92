@@ -9,12 +9,17 @@ $params = array_merge(
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    //to be changed -> exclude debug
+    'bootstrap' => ['log', 'debug'],
     'modules' => [
 		'allowedIPs' => ['127.0.0.1','10.10.10.86', '::1']	,
 		'catalog' => [
             'class' => 'efrontend\modules\catalog\catalog',
-        ],	
+        ],
+        //to be changed remove following
+        'debug' => [
+            'class' => 'yii\debug\Module',
+        ],
 	],
     'controllerNamespace' => 'efrontend\controllers',
     'components' => [
