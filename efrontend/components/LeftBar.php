@@ -29,7 +29,7 @@ class LeftBar extends Widget{
 		}else{
 			$menu_id	=	$user_data['menu_id'];
 		}
-		$this->role_id	=	($user_data['role_id'] != '') ? $user_data['role_id'] : 0;
+		$this->role_id	=	(isset($user_data) && $user_data['role_id'] != '') ? $user_data['role_id'] : 0;
 		
 		
 		//$menu_id = 10;
