@@ -12,7 +12,7 @@ return [
             'class' => 'yeesoft\components\Settings'
         ],
         'cache' => [
-            'class' => 'yii\caching\FileCache',
+            'class' => 'yii\caching\DummyCache',//'class' => 'yii\caching\FileCache',
         ],
         'user' => [
             'class' => 'yeesoft\components\User',
