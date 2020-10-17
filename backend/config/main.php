@@ -92,30 +92,30 @@ return [
         ],
     ],
     'components' => [
- 'frontcache' => [
-     'class' => 'yii\caching\DummyCache', //'class' => 'yii\caching\FileCache',
-            'cachePath' => Yii::getAlias('@frontend') . '/runtime/cache'
-            //'class' => 'yii\redis\Cache',
-          ], 
- 'efrontcache' => [
-     'class' => 'yii\caching\DummyCache',//'class' => 'yii\caching\FileCache',
-            'cachePath' => Yii::getAlias('@efrontend') . '/runtime/cache'
-            //'class' => 'yii\redis\Cache',
-          ],                
-         'cache' => [
-             'class' => 'yii\caching\DummyCache',//'class' => 'yii\caching\FileCache',
-          ],
-          'plugins' => [
-                'class' => lo\plugins\components\PluginsManager::class,
-                'appId' => 1, // lo\plugins\BasePlugin::APP_FRONTEND,
-                // by default
-                'enablePlugins' => true,
-                'shortcodesParse' => true,
-                'shortcodesIgnoreBlocks' => [
-                    '<pre[^>]*>' => '<\/pre>',
-                    //'<div class="content[^>]*>' => '<\/div>',
-                ]
-            ],
+        'frontcache' => [
+            'class' => 'yii\caching\DummyCache', //'class' => 'yii\caching\FileCache',
+                   'cachePath' => Yii::getAlias('@frontend') . '/runtime/cache'
+                   //'class' => 'yii\redis\Cache',
+                 ], 
+        'efrontcache' => [
+            'class' => 'yii\caching\DummyCache',//'class' => 'yii\caching\FileCache',
+                   'cachePath' => Yii::getAlias('@efrontend') . '/runtime/cache'
+                   //'class' => 'yii\redis\Cache',
+                 ],                
+                'cache' => [
+                    'class' => 'yii\caching\DummyCache',//'class' => 'yii\caching\FileCache',
+                 ],
+        'plugins' => [
+            'class' => lo\plugins\components\PluginsManager::class,
+            'appId' => 1, // lo\plugins\BasePlugin::APP_FRONTEND,
+            // by default
+            'enablePlugins' => true,
+            'shortcodesParse' => true,
+            'shortcodesIgnoreBlocks' => [
+                '<pre[^>]*>' => '<\/pre>',
+                //'<div class="content[^>]*>' => '<\/div>',
+            ]
+        ],          
     'view' => [
         'class' => lo\plugins\components\View::class,
     ],

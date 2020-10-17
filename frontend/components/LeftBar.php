@@ -29,8 +29,8 @@ class LeftBar extends Widget{
 		}else{
 			$menu_id	=	$user_data['menu_id'];
 		}
-
-		$this->role_id  =    (isset($user_data) && $user_data['role_id'] != '') ? $user_data['role_id'] : 0;
+		
+		$this->role_id  =      ($user_data == null) ? 0 : ( ($user_data['role_id'] != '') ? $user_data['role_id'] : 0);
 
 		//$this->role_id	=	($user_data['role_id'] != '') ? $user_data['role_id'] : 0;
 		
@@ -151,14 +151,8 @@ class LeftBar extends Widget{
 
 
 			$feature_id = $feature_id_data[0];
-			if(count($feature_id_data) > 1)
-			{
-				$type = $feature_id_data[1];
-			}
-			if(count($feature_id_data) > 2)
-			{
-				$d_menu_name = $feature_id_data[2];
-			}
+			$type = $feature_id_data[1];
+			$d_menu_name = $feature_id_data[2];
 
 			$menu_detail = $this->get_menu_data($feature_id);
 
